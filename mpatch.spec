@@ -11,6 +11,7 @@ URL:		http://oss.oracle.com/~mason/mpatch/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	sed >= 4.0
 %pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -21,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %prep
 %setup -q
-sed -i -e 's,#! /usr/bin/env python,#!/usr/bin/python,' cmd/mpatch
+%{__sed} -i -e 's,#! /usr/bin/env python,#!/usr/bin/python,' cmd/mpatch
 
 %build
 %{__python} setup.py build
