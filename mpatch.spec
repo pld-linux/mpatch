@@ -1,5 +1,5 @@
-Summary:	-
-Summary(pl.UTF-8):	-
+Summary:	patch-like utility which helps to resolve rejects
+Summary(pl.UTF-8):	Narzędzie podobne do patcha, pomagające nakładać fragmenty odrzucone
 Name:		mpatch
 Version:	0.8
 Release:	1
@@ -17,8 +17,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+mpatch applies diffs and is generally similar to patch, but it can
+also help resolve a number of common causes of patch rejects.
 
 %description -l -pl.UTF-8
+mpatch nakłada różnice ("diffy") w sposób podobny do programu patch,
+ale potrafi także rozwiązać wiele częstych przyczyn odrzucenia łaty.
 
 %prep
 %setup -q
