@@ -2,7 +2,7 @@ Summary:	patch-like utility which helps to resolve rejects
 Summary(pl.UTF-8):	Narzędzie podobne do patcha, pomagające nakładać fragmenty odrzucone
 Name:		mpatch
 Version:	0.8
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Text
 Source0:	http://oss.oracle.com/~mason/mpatch/%{name}-%{version}.tar.bz2
@@ -13,7 +13,6 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	sed >= 4.0
 %pyrequires_eq	python = %py_ver
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
