@@ -2,7 +2,7 @@ Summary:	patch-like utility which helps to resolve rejects
 Summary(pl.UTF-8):	Narzędzie podobne do patcha, pomagające nakładać fragmenty odrzucone
 Name:		mpatch
 Version:	0.8
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications/Text
 Source0:	http://oss.oracle.com/~mason/mpatch/%{name}-%{version}.tar.bz2
