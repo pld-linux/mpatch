@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 mpatch applies diffs and is generally similar to patch, but it can
 also help resolve a number of common causes of patch rejects.
 
-%description -l -pl.UTF-8
+%description -l pl.UTF-8
 mpatch nakłada różnice ("diffy") w sposób podobny do programu patch,
 ale potrafi także rozwiązać wiele częstych przyczyn odrzucenia łaty.
 
